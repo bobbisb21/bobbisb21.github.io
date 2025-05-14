@@ -1,0 +1,258 @@
+/*
+Color Palette
+#D5CCD0—Light Purple
+#B0A4BC—Darker Purple
+#8498AF–Blue
+#9EB0B6-Teal
+#85A495-Green
+#C47D76-Darker Red
+#D9BDBC-Red
+#C8B081-Yellow
+*/
+
+@font-face {font-family: "childrensignature"; src: url("ChildrenSignature.ttf"); format:("ttf")}
+@font-face {font-family: "comforta"; src: url("Comforta.ttf"); format:("ttf")}
+
+/* home page */
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "comforta", sans-serif;
+  color: #C47D76;
+  background-color: #B0A4BC;
+}
+
+h2{
+	font-size: 25px;
+	border-style:double;
+	border-color: #85A495;
+	border-width: 6px;
+	border-radius: 1.3;
+	text-align: center;
+	width:15%;
+	position:relative;
+	left: 50%;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("gardentools.jpg");
+  height: 100%;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #C8B081;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+/*
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #D5CCD0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+*/
+	.subdrop {
+	color:#D9BDBC;
+	padding: 15px 32px;
+  	text-align: center;
+	font-family: "comforta";
+ 	display: inline-block;
+ 	font-size: 40px;
+ 	margin: 4px 2px;
+  	cursor: pointer;
+	background-color:#D5CCD0;
+	border-radius:25px;
+	cursor: mermaid;
+    transition: background-color 0.3s;
+	}
+
+	h1 {
+		text-align: center;
+		}
+
+	li{
+		float: left;
+		}
+	li a{
+		text-align: center;
+		padding: 25px;
+		}
+	nav{
+		margin: auto;
+		text-align: center;
+	}	
+	.nav-bar {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: #85A495;
+    background-color: #f3f3f3;
+	}
+
+	.nav-bar li {
+    position: relative;
+    padding: 15px;
+    color: #8498AF;
+	}
+
+	.nav-bar li a {
+    text-decoration: none;
+    color: #8498AF;
+    font-weight: bold;
+    font-size: 1.8em;
+	}
+	
+	ul.nav-bar{
+	border-radius: 5px 5px 5px 5px;
+	margin: auto;
+	margin-top: 5%;
+	padding:0px;
+	overflow:hidden;
+	background-color: #D5CCD0;
+	color:#8498AF;
+	text-align: center;
+	list-style-type: none;
+	display: inline-block;
+		.active{
+		text-decoration: underline;
+		text-decoration-color: #8498AF;
+		}	
+	}
+	
+li a, .dropbtn{
+	display: inline-block;
+	color:#C47D76;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 1.2em;
+	}
+li a:hover, dropdown:hover .dropbtn{
+	color: #D9BDBC;
+	background-color:#8498AF;
+	}
+li.dropdown {
+	display: inline-block;
+	}
+.dropdown-content {
+	display:none;
+	position:absolute;
+	background-color:#9EB0B6;
+	min-width: 135px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index:1;
+    padding: 10px;
+	}
+.dropdown-content a{
+	color:#FFFFFF;
+	padding: 14px;
+	text-decoration:none;
+	display:block;
+	text-align: left;
+	}
+.dropdown-content a:hover{
+	background-color:#8498AF;
+	}
+.dropdown:hover .dropdown-content {
+	display:block;
+	}
+
+.subdrop {
+    display: flex;
+    flex-wrap: wrap;
+    background-color:#8498AF;
+	color:#9EB0B6;
+}
+
+button {
+	font-family:comforta;
+	background-color:#D5CCD0;
+	color:#85A495;
+	border-radius:1.1em;
+	font-size:18px;
+	padding: 8px;
+	margin: 5px;
+	border:double; 
+	.active{
+	background-color:#85A495;}
+}
+
+/* Artwork display styling */
+#root {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.artwork-container {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.artwork-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid #ddd;
+}
+
+.artwork-container p {
+    margin-top: 5px;
+    font-style: italic;
+    text-align: center;
+}
+
+/* Reset button styling */
+.reset-button {
+    margin-left: auto;
+    padding: 10px 15px;
+    background-color: #85A495;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font: 400 15px/1.8 "comforta", sans-serif;
+}
